@@ -1,0 +1,423 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsC/test/index", //启动页面，必选
+	// 		"query": "uuid=c4bba940-f69e-11ea-a419-6bafda9d095e&__id__=1" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [
+		// fullScreen-压窗屏
+		{
+			"path": "uview-ui/components/u-full-screen/u-full-screen",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "fade-in",
+					"background": "transparent",
+					"backgroundColor": "rgba(0,0,0,0)",
+					"popGesture": "none"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,
+                "navigationBarTitleText": "青海隆鼎驾培城",
+                "enablePullDownRefresh": false
+			}
+            
+        }
+		,{
+			"path" : "pages/user/student/index",
+			"style" :                                                                                    
+			{
+				"navigationStyle": "custom" ,
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
+		,{
+		    "path" : "pages/user/teacher/index",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom" ,
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "components/school-list/school-list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+			"path" : "components/nav-bar/nav-bar",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
+        ,{
+            "path" : "pages/user/rolecheck/rolecheck",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+			"root": "pages/index",
+			"pages": [
+				{
+				    "path" : "enroll",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "驾校报名",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},{
+				    "path" : "schoolList",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "驾校排行",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},{
+					"path" : "order",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				},{
+				    "path" : "orderResult",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "预约结果",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},{
+				    "path" : "partner",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "申请合伙人",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},{
+				    "path" : "sProcess",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "学车流程",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},{
+				    "path" : "tProcess",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "考试流程",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF",
+				        "enablePullDownRefresh": false
+				    }
+				},{
+					"path" : "coachList",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "教练列表",
+						"enablePullDownRefresh": false
+					}	
+				},{
+				    "path" : "practiceList",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "陪练列表",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "coachDetail",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "confirmOrder",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},
+				{
+				    "path" : "schoolDetails",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "驾校详情",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#FFFFFF",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "commentList",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+			]
+		},
+		{
+			"root": "pages/user",
+			"pages": [
+				{
+					"path" : "student/myOrder",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+					"path" : "student/subscribe",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+					"path" : "student/evaluate",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+					"path" : "student/driveRecord",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+				    "path" : "student/ssubscribeInfo",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+					"path" : "student/orderDetail",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+					"path" : "student/profile",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+				,{
+					"path" : "student/classHour",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom" ,
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+					
+				}
+			    ,{
+                    "path" : "login/login",
+                    "style" :                                                                                    
+                {
+					"navigationStyle": "custom" ,
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		},
+		{
+			"root": "pages/user",
+			"pages": [
+				{
+				    "path" : "teacher/approval",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "teacher/approvalResult",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				},
+				{
+				    "path" : "teacher/tdriveRecord",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "teacher/approvalRecord",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "teacher/tsubscribeInfo",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+				,{
+				    "path" : "teacher/tsubscribeRecord",
+				    "style" :                                                                                    
+				    {
+						"navigationStyle": "custom" ,
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+			]
+		}
+	],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["pages/index"]
+		},
+		"pages/user/rolecheck/rolecheck": {
+			"network": "all",
+			"packages": ["pages/user/student" , "pages/user/teacher"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "青海隆鼎驾培城",
+		"navigationBarBackgroundColor": "#4556EA",
+		"backgroundColor": "#FFFFFF",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "#B3B3B3",
+		"selectedColor": "#5887FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tab_shouye_normal.png",
+				"selectedIconPath": "static/image/tab_shouye_pre.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/index/order",
+				"iconPath": "static/image/tab_yuyue_normal.png",
+				"selectedIconPath": "static/image/tab_yuyue_pre.png",
+				"text": "预约"
+			},
+			{
+				"pagePath": "pages/user/rolecheck/rolecheck",
+				"iconPath": "static/image/tab_wode_normal.png",
+				"selectedIconPath": "static/image/tab_wode_pre.png",
+				"text": "我的"
+			}
+		]
+	}
+}
