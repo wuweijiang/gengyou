@@ -2,7 +2,7 @@
 // 同时，我们也可以在此使用getApp().globalData，如果你把token放在getApp().globalData的话，也是可以使用的
 const install = (Vue, vm) => {
 	Vue.prototype.$u.http.setConfig({
-		baseUrl: 'https://qhjx.cn.utools.club/api',
+		baseUrl: '/api',
 		showLoading: true, // 是否显示请求中的loading
 		loadingText: '请求中...', // 请求loading中的文字提示
 		loadingTime: 800, // 在此时间内，请求还没回来的话，就显示加载中动画，单位ms
@@ -11,6 +11,7 @@ const install = (Vue, vm) => {
 		// 设置为true后，就需要在this.$u.http.interceptor.response进行多一次的判断，请打印查看具体值
 		originalData: true, 
 		// 设置自定义头部content-type
+		//https://qhjx.cn.utools.club
 		header: {
 			'Authori-zation': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMjcuMC4wLjEiLCJhdWQiOiIxMjcuMC4wLjEiLCJpYXQiOjE2MDk3MzEyMTcsIm5iZiI6MTYwOTczMTIxNywiZXhwIjoxNjA5ODE3NjE3LCJqdGkiOnsiaWQiOjEsInR5cGUiOiJ1c2VyIn19.Z3Z8sGhsB1Vmnv1LjCx9Sc0y3gdwl_c9pgWpjOgbFCE'
 		}

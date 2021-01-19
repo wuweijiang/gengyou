@@ -9,7 +9,7 @@ module.exports = {
 				  "/api" : {
 					  "target" : "https://qhjx.cn.utools.club", //目标接口域名
 					   "changeOrigin" : true,  //是否跨域
-					   "secure" : fasle  ,// 设置支持https协议的代理,
+					   "secure" : true ,// 设置支持https协议的代理,
 					   "pathRewrite" : {
 						   "^/api" : "/api"
 					   }

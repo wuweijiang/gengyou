@@ -69,7 +69,7 @@
 					school:'',
 					fileList: []
 				},
-				action: 'http://www.example.com/upload',
+				action: '/api/upload',
 				rules: {
 					name: [
 						{

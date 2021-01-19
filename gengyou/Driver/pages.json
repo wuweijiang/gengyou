@@ -82,6 +82,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/subscribe/subscribe",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"subPackages": [{
 			"root": "pages/index",
@@ -398,7 +408,7 @@
 		"color": "#B3B3B3",
 		"selectedColor": "#5887FF",
 		"backgroundColor": "#FFFFFF",
-		"borderStyle": "black",
+		"borderStyle": "none",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
@@ -407,7 +417,7 @@
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/index/order",
+				"pagePath": "pages/subscribe/subscribe",
 				"iconPath": "static/image/tab_yuyue_normal.png",
 				"selectedIconPath": "static/image/tab_yuyue_pre.png",
 				"text": "预约"

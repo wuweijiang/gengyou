@@ -44,7 +44,7 @@
 						avatar: "/static/image/icon_xueyuan@2x.png"
 					},
 					{
-						name: "我是学员",
+						name: "我是教练",
 						avatar: "/static/image/icon_jiaolian@2x.png"
 					}
 				],

@@ -48,8 +48,8 @@
 </template>
 
 <script>
-	import schoolList from "../../components/school-list/school-list.vue"
-	import navBar from "../../components/nav-bar/nav-bar.vue"
+	import schoolList from "@/components/school-list/school-list.vue"
+	import navBar from "@/components/nav-bar/nav-bar.vue"
 	
 	export default {
 		components:{
